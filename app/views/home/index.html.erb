@@ -1,0 +1,95 @@
+<div class="container">
+    <h1>DataBase 확인</h1>
+    
+    <div class="left">
+        <h2>Position</h2>
+        <div>
+            <table class="position">
+                <tr>
+                    <td class="position">userId</td>
+                    <td class="position">Long</td>
+                    <td class="position">Lati</td>
+                    <td class="position">작성시간</td>
+                </tr>
+                <% @everypost.each do |p| %>
+                <tr>
+                    <td class="position"><%=p.userId%></td>
+                    <td class="position"><%=p.longi%></td>
+                    <td class="position"><%=p.lati%></td>
+                    <td class="position"><%=p.created_at%></td>
+                </tr>
+                <% end %>
+            </table>
+        </div>
+        <div>
+            <!--<form method="POST" action="position">-->
+            <!--  <div class="form-group">-->
+            <!--    <label for="Longi">Longi</label>-->
+            <!--    <input type="text" id="Longi" name="Longi" placeholder="127.321424" value="127.321424">-->
+            <!--  </div>-->
+            <!--  <div class="form-group">-->
+            <!--    <label for="Lati">Lati</label>-->
+            <!--    <input type="text" id="Lati" name="Lati" placeholder="36.359265" value="36.359265">-->
+            <!--  </div>-->
+            <!--  <button type="submit">Send</button>-->
+            <!--</form>-->
+        </div>
+    </div>
+        
+    <div class="right">
+        <h2>User</h2>
+        <div>
+            <table class="position">
+                <tr>
+                    <td class="position">userId</td>
+                    <td class="position">address</td>
+                    <td class="position">home</td>
+                    <td class="position">school</td>
+                    <td class="position">parent1</td>
+                    <td class="position">parent2</td>
+                </tr>
+                <% @everyuser.each do |p| %>
+                <tr>
+                    <td class="position"><%=p.userId%></td>
+                    <td class="position"><%=p.address%></td>
+                    <td class="position"><%=p.home%></td>
+                    <td class="position"><%=p.school%></td>
+                    <td class="position"><%=p.parent1%></td>
+                    <td class="position"><%=p.parent2%></td>
+                </tr>
+                <% end %>
+            </table>
+        </div>
+        <div>
+            <!--<form method="POST" action="create">-->
+            <!--  <div class="form-group">-->
+            <!--    <label for="userId">userId</label>-->
+            <!--    <input type="text" id="userId" name="userId" placeholder="userId" value="user1234">-->
+            <!--  </div>-->
+            <!--  <div class="form-group">-->
+            <!--    <label for="address">address</label>-->
+            <!--    <input type="text" id="address" name="address" placeholder="address" value="address">-->
+            <!--  </div>-->
+            <!--  <div class="form-group">-->
+            <!--    <label for="home">home</label>-->
+            <!--    <input type="text" id="home" name="home" placeholder="address" value="127.429995,36.328182">-->
+            <!--  </div>-->
+            <!--  <div class="form-group">-->
+            <!--    <label for="school">school</label>-->
+            <!--    <input type="text" id="school" name="school" placeholder="school" value=" 127.426465,36.328943">-->
+            <!--  </div>-->
+              
+            <!--  <div class="form-group">-->
+            <!--    <label for="parent1">parent1</label>-->
+            <!--    <input type="text" id="parent1" name="parent1" placeholder="parent1" value="parent1">-->
+            <!--  </div>-->
+            <!--  <div class="form-group">-->
+            <!--    <label for="parent2">parent2</label>-->
+            <!--    <input type="text" id="parent2" name="parent2" placeholder="parent2" value="parent2">-->
+            <!--  </div>-->
+            <!--  <button type="submit">Send</button>-->
+            <!--</form>-->
+        </div>
+    </div>
+    
+</div>
