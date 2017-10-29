@@ -21,8 +21,7 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.mysql2
+  adapter: mysql2
   host: 127.0.0.1
   database: server_production
   username: root
