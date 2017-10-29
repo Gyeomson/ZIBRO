@@ -24,7 +24,7 @@ production:
   <<: *default
   database: db/production.mysql2
   host: 127.0.0.1
-  database: ZIBRO
+  database: server_production
   username: root
   password: <%= ENV.fetch("DATABASE_PASSWORD"){ "" } %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
